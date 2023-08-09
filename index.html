@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9b1803db3c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Jon's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#main">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">PROJECTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main id="main">
+        <section class="firstSection">
+            <div class="leftSection">
+                Hey, My name is <span class="name-color">Jon</span>
+                <div> & I am a
+                    <span id="element"></span>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="img-1.png" />
+            </div>
+        </section>
+    </main>
+
+    <div id="about">
+        <div class="containter">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="logo.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>To have a career in a professional organization and put all my efforts 
+                        into the growth the of the organization and have a great working environment.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages:</span><br>Java, PHP, Python, C, JavaScript, HTML, CSS</li>
+                            <li><span>Database Systems: </span><br>MySQL, Oracle</li>
+                            <li><span>Operating system:</span><br>Windows, Kali-Linux </li>
+                            <li><span>Application Software:</span><br>Visual Studio Code, Android Studio, Microsoft Office </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>1-Year </span><br>Data entry operator at mount olive english medium school</li>
+                            <li><span>3-year</span><br>Part Time data entry operator at National Discipleship Training Centers (NDTC)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>BE (Computer Science & Engineering)</span><br>INSTITUTION: R. N. G. Patel Institute of Technology, Bardoli
+                                <br>GRADUATING YEAR: Running(2024) <br>Last Grade: 5th Semester(7.52 CGPA)   
+                            </li>
+                            <li><span>Diploma (Computer Engineering)</span><br>INSTITUTION: Government Polytechnic, Waghai
+                                <br>GRADUATING YEAR: 2021 <br>Last Grade: 9.8 CGPA   
+                            </li>
+                            <li><span>ITI (Computer Operator Come Programing Assistant)</span><br>INSTITUTION: Industrial Training Center, Waghai
+                                <br>GRADUATING YEAR: 2016 <br>Last Grade: 78.00%  
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>1)SMART VILLAGE</h2>
+                    <p>This is a web application through which we can manage villages digitally.<br>
+                        <b>Functions:</b> OTP verification and send messages using SMTP server, online tax payment using Paytm Gateway, join new citizens, online notification of new schemes or circulars, online problem reporting, etc.<br>
+                        <b>Technology:</b> PHP, MYSQL, HTML, CSS, JavaScript
+                    </p>
+                </div>
+                <div>
+                    <h2>2)CHATCODE</h2>
+                    <p>This is a web application through which we write code in different programming languages and team members can edit each other's code and see real-time changes.<br>
+                        <b>Functions:</b> Create room, join room, create projects, coding, chat or video/audio conference, etc.<br>
+                        <b>Technology:</b> Node.js, Next.js, Socket.IO, TypeScript, MongoDB
+                    </p>
+                </div>
+                <div>
+                    <h2>3)ROAD ACCIDENTS DATA ANALYSIS</h2>
+                    <p>Road accidents are a major public health and safety issue that cause millions of deaths and injuries every year. This project aims to analyze the data of road accidents.</p>
+                    <a href="#">more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fa-regular fa-envelope"></i> jonkokani@hotmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-phone-volume"></i>+91 9427912723</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <br><br>
+                    <a href="CV.pdf" download class="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your E-mail" required>
+                        <textarea name="message" rows="6" placeholder="Message....."></textarea><br>
+                        <button type="submit" class="sbtn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i></i> Jhony.co.in</p>
+    </div>
+
+
+
+
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Devloper', 'Back And Devloper(PHP/Java)', 'Android Developers(Java)'],
+            typeSpeed: 50,
+        });
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+
+</html>
